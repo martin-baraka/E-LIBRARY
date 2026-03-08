@@ -1,14 +1,13 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php
+  <?php
 session_start();
 if (isset($_SESSION['user_id'])) {
     header("Location: dashboard.php");
     exit();
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>E-Library – Your Digital Reading Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
